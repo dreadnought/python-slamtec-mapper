@@ -1,0 +1,37 @@
+{
+  "command": "getbinaryconfig",
+  "request_id": 8,
+  "result": {
+    "base": {
+      "hardware_version": 1,
+      "high_battery_percentage_for_resume": 0.699999988079071,
+      "low_battery_auto_homing": false,
+      "low_battery_percentage_for_charging": 0.1000000014901161,
+      "manufacture_id": 255,
+      "manufacture_name": "Slamtec",
+      "model_id": 56593,
+      "model_name": "Slamware Core Baseless",
+      "robot_size": 0.239999994635582,
+      "sensors": [],
+      "slamware_core_pose": {
+        "head_up": true,
+        "yaw": 0.0
+      }
+    },
+    "docking": {
+      "backward_docking": false,
+      "dock_supported": false
+    },
+    "features": {
+      "has_ir_docking_tower": false
+    },
+    "lidar": {
+      "installation_pose": {
+        "yaw": -1.570796370506287
+      }
+    },
+    "motion_plan": {
+      "side_margin": 0.009999999776482582
+    }
+  }
+}

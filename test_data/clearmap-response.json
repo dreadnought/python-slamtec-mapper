@@ -1,0 +1,8 @@
+{
+  "command": "clearmap",
+  "request_id": 4,
+  "result": {
+    "code": 1,
+    "timestamp": 766819
+  }
+}

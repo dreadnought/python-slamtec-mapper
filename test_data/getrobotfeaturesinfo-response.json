@@ -1,0 +1,13 @@
+{
+  "command": "getrobotfeaturesinfo",
+  "request_id": 9,
+  "result": {
+    "diagnosis": {
+      "subscription": {
+        "resumable_mode": {
+          "supported": true
+        }
+      }
+    }
+  }
+}

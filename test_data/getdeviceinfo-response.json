@@ -1,0 +1,15 @@
+{
+  "command": "getdeviceinfo",
+  "request_id": 11,
+  "result": {
+    "code": 1,
+    "deviceID": "A4EE4AEBEAEEF79AD2E7F4F97A388F21",
+    "hardwareVersion": "1",
+    "manufacturerId": 255,
+    "manufacturerName": "Slamtec",
+    "modelId": 56593,
+    "modelName": "Slamware Core Baseless",
+    "softwareVersion": "2.6.0_798_dev-sdp_vre-20190317",
+    "timestamp": 1357075
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "command": "getknownarea",
+  "request_id": 2,
+  "result": {
+    "code": 1,
+    "max_x": 1.0,
+    "max_y": 2.549999952316284,
+    "min_x": -2.0,
+    "min_y": -4.800000190734863,
+    "timestamp": 1357026
+  }
+}

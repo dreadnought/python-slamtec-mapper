@@ -1,0 +1,262 @@
+{
+  "command": "getrobotconfig",
+  "request_id": 7,
+  "result": {
+    "base": {
+      "config": {
+        "channel": "serial2udp",
+        "deviceId": 61696,
+        "host": "127.0.0.1",
+        "interfaceId": 2,
+        "port": 9310,
+        "rxEndpoint": 4,
+        "serviceName": "ctrlbus",
+        "txEndpoint": 4,
+        "venderId": 64719
+      },
+      "encoder_ticks_per_meter": 6390,
+      "hardware_version": 1,
+      "high_battery_percentage_for_resume": 0.699999988079071,
+      "low_battery_auto_homing": false,
+      "low_battery_percentage_for_charging": 0.1000000014901161,
+      "manufacture_id": 255,
+      "manufacture_name": "Slamtec",
+      "max_robot_line_speed": 0.7,
+      "model_id": 56593,
+      "model_name": "Slamware Core Baseless",
+      "robot_angular_speed": 1.0,
+      "robot_angular_speed_ctrl_min": 0.0,
+      "robot_line_speed": 0.5,
+      "robot_line_speed_ctrl_min": 0.0,
+      "robot_size": 0.239999994635582,
+      "sensors": [],
+      "slamware_core_pose": {
+        "head_up": true,
+        "yaw": 0.0
+      }
+    },
+    "customized": {
+      "enable": true
+    },
+    "docking": {
+      "backward_docking": false,
+      "dock_supported": false,
+      "docking_adjust_backward_angular_speed": 0.05,
+      "docking_check_detecting": false,
+      "docking_max_landing_error_offset": 0.02,
+      "offland_register": false,
+      "wait_obstacle_time": 1
+    },
+    "features": {
+      "has_ir_docking_tower": false
+    },
+    "imu": {
+      "channel": "usb",
+      "deviceId": 61696,
+      "interfaceId": 3,
+      "rxEndpoint": 5,
+      "txEndpoint": 5,
+      "type": "cp0",
+      "venderId": 64719
+    },
+    "landmark": {
+      "contactor_time_out": 10,
+      "cooling_time": 0.2,
+      "depth_camera_radius_ratio": 0.7,
+      "depth_camera_safe_distance": 0.4,
+      "depth_camera_safe_distance_followkeypoints": 0.4,
+      "depth_camera_safe_distance_followmilestone": 0.4,
+      "depth_camera_time_out": 1,
+      "enable_use_new_depth_camera_landmark_generation_method": true,
+      "generate_landmark_safedistance_reduce_length": 0.02,
+      "ref_landmark_time": 1,
+      "ultra_sonic_time_out": 2
+    },
+    "lidar": {
+      "aperture": "2pi",
+      "config": {
+        "channel": "usb",
+        "deviceId": 61696,
+        "interfaceId": 0,
+        "rxEndpoint": 1,
+        "txEndpoint": 3,
+        "venderId": 64719
+      },
+      "enable_imu_lidar_compensation": true,
+      "enable_tilt_compensation": true,
+      "hibernate_time": "0s",
+      "installation_pose": {
+        "yaw": -1.570796370506287
+      },
+      "max_distance": 40.0,
+      "observe_radius": 1.0,
+      "require_angular_compensation": false,
+      "type": "rplidar"
+    },
+    "log": {
+      "console": {
+        "logLevel": "info"
+      },
+      "diagnosis_publishers": [
+        {
+          "logLevel": "info",
+          "topic": "onlineslam/log_message"
+        }
+      ],
+      "global": {
+        "logLevel": "info"
+      }
+    },
+    "mapping": {
+      "amcl_min__particle_num": 100,
+      "ekf_filter_optional_parameters": {
+        "ekf_filter_consider_origin_icp_threshold": 0.7,
+        "ekf_filter_reliable_icp_goodness_threshold": 0.65,
+        "ekf_filter_reset_icp_goodness_threshold": 1.1,
+        "ekf_filter_type": "ekf_six_degrees_delta_odo",
+        "enable_adjust_ekf_result_with_odo": false,
+        "enable_run_icp_on_original_map_in_ekf": true,
+        "enable_use_ekf_filter_in_amcl": false
+      },
+      "enable_build_hiddenmap": true,
+      "enable_localization_except_for_rbpf_method": true,
+      "enable_refresh_hiddenmap_by_original_map": true,
+      "enable_reloc_strategy": true,
+      "enable_using_hiddemap_for_relocalizaiton": true,
+      "enable_using_hiddenmap_for_localization": true,
+      "enforce_resample_icp_threshold": 0.3,
+      "entropy_params": {
+        "accept_mean_i": 0.7,
+        "accept_unknown_diff_p": 0.2,
+        "block_step_length": 6,
+        "front_back_precent_threshold": 0.1,
+        "keep_entropy_count_rate": 0.5,
+        "near_precent_threshold": 0.1,
+        "near_unknown_precent_threshold": 0.15,
+        "raytrace_max_distance_rate": 0.5,
+        "remain_extern_unknow_in_map_rate": 0.2,
+        "sequence_count_threshold": 4,
+        "unknown_count_threshold": 3,
+        "unknown_precent_threshold": 0.12
+      },
+      "hidden_map_update_parameters": {
+        "enable_use_observation_frame_map_update_method": true,
+        "hidden_map_insert_max_certainty": 0.72,
+        "max_difference_rate_of_occupied_grids": 0.75,
+        "min_difference_number_of_free_grids": 100,
+        "min_difference_rate_of_occupied_grids": 0.1,
+        "min_mean_i_to_be_updated": 0.7
+      },
+      "icp_correction": {
+        "distance_threshold": 10.0,
+        "enable": false,
+        "max_sample": 100,
+        "min_sample": 20
+      },
+      "icp_goodness_threshold": 0.6,
+      "init_particle_max_x": 10,
+      "init_particle_max_y": 10,
+      "init_particle_min_x": -10,
+      "init_particle_min_y": -10,
+      "initial_map_area": {
+        "height": 300,
+        "width": 300,
+        "x": -150,
+        "y": -150
+      },
+      "local_hidden_map_update_parameters": {
+        "enable_build_local_hidden_map": true,
+        "initial_local_map_area": {
+          "height": 60,
+          "width": 60,
+          "x": -30,
+          "y": -30
+        },
+        "local_map_update_angle_threshold": 30,
+        "local_map_update_distance_threshold": 0.6
+      },
+      "localization_quality_monitor_params": {
+        "low_localization_for_stop_time_out": 2,
+        "low_localization_quality_threshold": 40,
+        "max_sample": 50,
+        "min_quality_for_recovery": 50,
+        "strategy": "LocalizationLowQualityStrategyRelocalization"
+      },
+      "localization_update_angle_threshold": 5,
+      "localization_update_distance_threshold": 0.1,
+      "low_quality_icp_threshold": 0.4,
+      "map_update_angle_threshold": 15,
+      "map_update_distance_threshold": 0.4,
+      "min_localization_angular_deviation": 0.1,
+      "min_localization_distance_deviation": 0.2,
+      "motion_gausian_model_a1": 0.1,
+      "observation_map": {
+        "enable": true,
+        "obstacle_cells_decay_step": 127
+      },
+      "online_amcl_icp_goodness_threshold": 0.45,
+      "online_amcl_max_particle_num": 250,
+      "particle_num_per_square_meter": 15,
+      "particles_max_num": 4000,
+      "refresh_map_time_intervel_in_minute": 5,
+      "relocalization_find_best_result_time_ratio": 0.33,
+      "relocalization_qulity_threshold": 35,
+      "relocalization_reliable_icp_goodness": 0.75,
+      "restrain_mapping_angle_threshold": 0.4,
+      "slambuilder_type": "graph-rbpf",
+      "support_map_optimization": true
+    },
+    "motion_plan": {
+      "allow_go_unknown_space": false,
+      "alternative_path_finder": {
+        "local_underlying_path_finder_impl_type": "global_path_finder"
+      },
+      "angular_acceleration": 3.0,
+      "bounded_relaxation": true,
+      "brake_deceleration": 2.5,
+      "check_obstacle_distance": 0.26,
+      "default_path_finder_impl_type": "global_path_finder",
+      "disable_motionplanner": true,
+      "distance_threshold": 0.31,
+      "elastic_path_expension_factor": 2,
+      "enable_elastic_path": true,
+      "enable_predict_for_bumper_backward": true,
+      "enable_set_oa_safe_distance": true,
+      "enable_turn_while_wait_for_planning": true,
+      "expansion_diameter": 0.1,
+      "global_path_finder": {
+        "rebuild_nearby_enable_nearby_obstacle_filter": true
+      },
+      "keep_landmarker_radius": 6,
+      "lidar_odometry_compensation_time": 0,
+      "linear_acceleration": 0.3,
+      "max_cost": 4,
+      "max_side_margin": 0.15,
+      "merge_points_count": 2,
+      "motor_smooth_factor": 0.1,
+      "move_resolution": 0.2,
+      "move_to_oa_strategy": "dwa",
+      "no_route_strategy_on_map_update": "turn",
+      "no_route_strategy_on_pure_localization": "turn",
+      "no_route_turn_and_wait_max_ms": 0,
+      "oa_safe_distance": 0.1,
+      "occupy_size_factor": 1.03,
+      "path_search_timeout_duration": 10,
+      "power_cost_map_factor": 1,
+      "side_margin": 0.009999999776482582,
+      "stationary_time_out": 10,
+      "straight_forward_safe_distance_factor": 0.6,
+      "sub_path_points_gap": 10,
+      "sub_path_search": false,
+      "virtual_track_oa_strategy": "simple",
+      "virtual_wall_max_num": 1000,
+      "virtual_wall_safe_distance_factor": 0.8
+    },
+    "statistics_load": {
+      "enable": true,
+      "statistics_interval": 3600000,
+      "statistics_store_path": "/root/slamware_persistence/statistics.info"
+    },
+    "type": "zeus"
+  }
+}

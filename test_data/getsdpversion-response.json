@@ -1,0 +1,9 @@
+{
+  "command": "getsdpversion",
+  "request_id": 10,
+  "result": {
+    "code": 1,
+    "sdp_version": "2.0.0_dev-sdp-20161008",
+    "timestamp": 1357073
+  }
+}

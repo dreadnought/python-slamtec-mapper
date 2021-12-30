@@ -1,0 +1,11 @@
+{
+  "command": "getcurrentaction",
+  "request_id": 6,
+  "result": {
+    "action_name": "",
+    "action_type": 0,
+    "code": 1,
+    "id": 0,
+    "timestamp": 0
+  }
+}
